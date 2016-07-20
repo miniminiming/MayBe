@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyTestApplication.iml" filepath="$PROJECT_DIR$/MyTestApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bugtagsdemo/bugtagsdemo.iml" filepath="$PROJECT_DIR$/bugtagsdemo/bugtagsdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/photoViewDemo/photoViewDemo.iml" filepath="$PROJECT_DIR$/photoViewDemo/photoViewDemo.iml" />
     </modules>
