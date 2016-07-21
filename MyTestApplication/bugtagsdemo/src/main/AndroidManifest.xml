@@ -5,7 +5,7 @@
     <application
         android:name=".application.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_new_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -20,25 +20,25 @@
             android:name=".activity.coorinatorlayout.CoordinatorLayoutActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.administrator.myapplication.activity.RippleTestActivity"
+            android:name=".activity.RippleTestActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.administrator.myapplication.activity.ProgressTestActivity"
+            android:name=".activity.ProgressTestActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.administrator.myapplication.activity.VectorTestActivity"
+            android:name=".activity.VectorTestActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.administrator.myapplication.activity.coorinatorlayout.CoordinatorMainActivity"
+            android:name=".activity.coorinatorlayout.CoordinatorMainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.administrator.myapplication.activity.coorinatorlayout.EasyCoordinatorLayoutActivity"
+            android:name=".activity.coorinatorlayout.EasyCoordinatorLayoutActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.administrator.myapplication.activity.coorinatorlayout.AppBarLayoutActivity"
+            android:name=".activity.coorinatorlayout.AppBarLayoutActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.administrator.myapplication.activity.coorinatorlayout.CollapsingToolbarLayoutActivity"
+            android:name=".activity.coorinatorlayout.CollapsingToolbarLayoutActivity"
             android:screenOrientation="portrait" />
     </application>
 
