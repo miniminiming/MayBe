@@ -309,7 +309,7 @@ public class ProgressView extends View {
         //根据树叶集合中的叶子的当前状态来画出所有的树叶
         for (int x = 0; x < mLeftList.size(); x++) {
             Leaf leaf = mLeftList.get(x);
-            Matrix matrix = new Matrix();
+            Matrix matrix = leaf.matrix;
             //平移到图片中心
             matrix.postTranslate(-leaf.leftBitmap.getWidth() / 2,
                     -leaf.leftBitmap.getHeight() / 2);//加上这个可以让它从中心转
@@ -320,6 +320,7 @@ public class ProgressView extends View {
 
             canvas.drawBitmap(leaf.leftBitmap, matrix, null);
 
+            matrix.reset();
             //刷新数据
             leaf.drawX -= leaf.XRate;
             //正弦曲线的振幅由括号外的系数决定，越大越大
@@ -354,6 +355,7 @@ public class ProgressView extends View {
 
         public float bornPointX;//出生地点
 
+        public Matrix matrix;
     }
 
     private List<Leaf> mLeftList = new ArrayList<>();
@@ -403,6 +405,7 @@ public class ProgressView extends View {
         leaf.rotateRate = random.nextInt(21) - 10;
 //        leaf.rotateRate = 5;
         leaf.bornPointX = random.nextInt((int) (mHeight / 2 - mGapDistance));
+        leaf.matrix=new Matrix();
         return leaf;
     }
 

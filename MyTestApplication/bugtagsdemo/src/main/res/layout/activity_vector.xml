@@ -17,8 +17,8 @@
         tools:context=".MainActivity">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:background="#44aaaaaa"
             android:src="@drawable/vector_test" />
 
@@ -63,7 +63,7 @@
             android:id="@+id/iv_mystr_left"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:background="#44aaaaaa"
+            android:background="#77aaaaaa"
             android:src="@drawable/mystarleft_anim_vector" />
 
     </LinearLayout>
