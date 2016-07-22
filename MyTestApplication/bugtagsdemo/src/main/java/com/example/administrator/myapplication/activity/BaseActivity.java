@@ -3,13 +3,14 @@ package com.example.administrator.myapplication.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.FragmentActivity;
 import android.view.MotionEvent;
 import android.widget.Toast;
 
 import com.bugtags.library.Bugtags;
 import com.example.administrator.myapplication.utils.ViewUtils;
 
-public class BaseActivity extends Activity {
+public class BaseActivity extends FragmentActivity {
 
     private Handler mHandler;
 
