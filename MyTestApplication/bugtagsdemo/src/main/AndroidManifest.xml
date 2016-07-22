@@ -23,6 +23,9 @@
             android:name=".activity.RippleTestActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".activity.FingerActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.ProgressTestActivity"
             android:screenOrientation="portrait" />
         <activity

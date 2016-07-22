@@ -26,7 +26,8 @@ public class MainActivity extends BaseActivity {
                     "CoordinatorLayout",
                     "按钮水波纹",
                     "落叶进度条",
-                    "vectorTest"
+                    "vectorTest",
+                    "手指动画",
             };
 
     @Override
@@ -36,6 +37,8 @@ public class MainActivity extends BaseActivity {
         initView();
         initData();
         registerListener();
+
+//        addFingerLayout(this);
     }
 
     private void initView() {
@@ -71,6 +74,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 3:
                         startActivity(new Intent(MainActivity.this,VectorTestActivity.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(MainActivity.this,FingerActivity.class));
                         break;
                 }
             }
