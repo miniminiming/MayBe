@@ -38,7 +38,6 @@ public class MainActivity extends BaseActivity {
         initData();
         registerListener();
 
-//        addFingerLayout(this);
     }
 
     private void initView() {

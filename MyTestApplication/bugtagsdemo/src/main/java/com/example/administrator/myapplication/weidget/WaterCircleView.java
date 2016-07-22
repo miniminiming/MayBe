@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -118,8 +119,46 @@ public class WaterCircleView extends View {
     }
 
     @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+//        Log.i("circleView", "onAttacthedToWindow========");
+    }
+
+    @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
+//        Log.i("circleView","onDetachedFromWindow========");
         mCircles.clear();
+    }
+
+//    @Override
+//    protected void onWindowVisibilityChanged(int visibility) {
+//        super.onWindowVisibilityChanged(visibility);
+//        switch (visibility){
+//            case View.VISIBLE:
+//                Log.i("circleView","VISIBLE========");
+//                break;
+//            case View.INVISIBLE:
+//                Log.i("circleView","INVISIBLE========");
+//                break;
+//            case View.GONE:
+//                Log.i("circleView","GONE========");
+//                break;
+//        }
+//    }
+
+    @Override
+    /**
+     * 焦点改变就会回调这个
+     */
+    public void onWindowFocusChanged(boolean hasWindowFocus) {
+        super.onWindowFocusChanged(hasWindowFocus);
+        if (hasWindowFocus){
+            Log.i("circleView","hasWindowFocus==="+hasWindowFocus);
+        }else{
+            //失去焦点时就清空集合
+            mCircles.clear();
+            Log.i("circleView","hasWindowFocus==="+hasWindowFocus);
+        }
     }
 }
