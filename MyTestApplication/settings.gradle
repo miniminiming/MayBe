@@ -1,1 +1,1 @@
-include ':app', ':photoViewDemo', ':library', ':bugtagsdemo'
+include ':library', ':bugtagsdemo', ':opengldemo'

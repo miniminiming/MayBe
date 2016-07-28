@@ -9,10 +9,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bugtagsdemo" />
             <option value="$PROJECT_DIR$/library" />
-            <option value="$PROJECT_DIR$/photoViewDemo" />
+            <option value="$PROJECT_DIR$/opengldemo" />
           </set>
         </option>
       </GradleProjectSettings>
